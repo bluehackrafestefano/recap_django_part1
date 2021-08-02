@@ -1,7 +1,9 @@
+{% extends 'base.html' %}
 {% load static %}
 
   <!-- about section -->
 
+{% block content %}
   <section class="about_section layout_padding">
     <div class="container">
       <div class="box">
@@ -11,7 +13,7 @@
           </h2>
         </div>
         <div class="img-box">
-          <img src="images/about-img.png" alt="">
+          <img src= "{% static 'images/about-img.png' %}" alt="">
         </div>
         <div class="row">
           <div class="col-md-10 mx-auto">
@@ -42,4 +44,4 @@
     <!-- end info_section -->
 
     <!-- footer section -->
-    
+{% endblock content %}
